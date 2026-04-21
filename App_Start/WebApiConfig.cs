@@ -19,6 +19,8 @@ namespace ApiParciales
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            //enable cors
+            config.EnableCors();
         }
     }
 }
